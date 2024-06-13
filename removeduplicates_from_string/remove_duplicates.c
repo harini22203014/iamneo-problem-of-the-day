@@ -1,1 +1,16 @@
-Suppose you have a string of characters, and you want to remove all the duplicate characters from the string. You can implement this using a stack data structure.
+#include<stdio.h>
+int main(){
+char arr[1000];
+scanf("%s", arr);
+int alpha [26];
+for(int i=0;arr[i]!= '\0';i++){
+alpha[arr[i]]=1;
+}
+printf("After removing duplicates: ");
+for(int i=0;arr[i]!= '\0';i++){
+if(alpha[arr[i]]>0){
+printf("%c",arr[i]);
+alpha[arr[i]]=0;
+}
+}
+}
