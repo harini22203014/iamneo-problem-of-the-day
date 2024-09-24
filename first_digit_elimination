@@ -1,0 +1,2 @@
+to eleminate the first digit of the number alone
+n = n % (int) Math.pow(10, (int) Math.log10(n));
