@@ -8,7 +8,7 @@ if(arr[i]==b){
 return b;
 }
 else if(arr[i]<b && (b-arr[i])<diff){
-diff-b-arr[i];
+diff=b-arr[i];
 num=arr[i];
 }
 }
